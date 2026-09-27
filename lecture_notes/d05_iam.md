@@ -25,8 +25,8 @@
   - **Group**：一群 User，方便一次指派 Policy
   - **Policy**：JSON，寫著「誰能做什麼」的唯一來源
   - **Role**：沒有密碼沒有金鑰，誰扮演誰暫時拿到權限（一個外套，穿上才能取得臨時憑證）
-- Policy 的 Statement 記憶點：1 條 = 誰 + Effect + Action + Resource（填 ARN）+ Condition（選填）；最小權限＝Action 寫具體動詞、Resource 寫具體 ARN、不要用 `*`（口訣：E.P.A.R.C.）
-- Role 身上掛兩份 Policy：permission policy（它能做什麼）+ trust policy（誰能穿上它，Principal 決定誰能 AssumeRole）
+- Policy 的 Statement 記憶點：1 條 = 誰 + Effect + Action + Resource（填 ARN）+ Condition（選填）；最小權限 = Action 寫具體動詞、Resource 寫具體 ARN、不要用 `*`（口訣：E.P.A.R.C.）
+- Role 身上掛兩份 Policy：permission policy（它能做什麼）+ trust policy（誰能穿上它？ Principal 決定誰能 AssumeRole）
 - **Access Key vs Role 臨時憑證**：
   - Access Key：建好永久有效，等同帳號密碼，外洩後對方就是你，要靠人手動刪
   - Role：透過 STS AssumeRole 換到臨時憑證（key + secret + session token），預設 1 小時、最長 12 小時，到期自動作廢，不用人去刪
@@ -75,11 +75,19 @@
 情境：拿到一個全新空帳號，老闆說每月不要超過 30 美元，四步做完才算能用：
 
 1. 必做一: root 開 MFA, 不留 access key
-2. 必做二: 用 Identity Center 開自己的身分
-3. 必做三: CLI 開 admin 跟 dev 兩個 profile
-4. 必做四: 兩筆預算, 月預算 30 美元
-5. 進階: 加進阿德跟小美, 先寬後收緊
-6. 加分: Budget Action 自動煞車
+2. 必做零: 先看帳號方案, Free plan 走路線 B
+3. 必做二(路線 B): course-admin 加 MFA, 再建 dev Role
+4. 必做三: CLI 開一個 dev profile, 兩條路線都拿臨時憑證
+5. 必做四: 兩筆預算, 月預算 30 美元
+6. 進階: 加進阿德跟小美, 先寬後收緊
+7. 加分: Budget Action 自動煞車
+
+- 必做寫五項: Free plan 還是 Paid plan、root 的 MFA 裝置在哪、登入入口(B:帳號 ID 加 course-admin;A:
+  access portal 網址)、你有哪兩種權限、兩筆預算的門檻
+- 附上 3-2 跟 4-3 兩條指令的實際輸出,帳號 ID 遮掉
+- 進階: 加寫阿德跟小美各有什麼權限,附 mei 開 EC2 被擋的截圖或文字紀錄
+- 加分: 加寫 Budget Action 會做什麼,action 狀態是 Standby
+- 繳交：五項齊全(40%) + 3-2 和 4-3 兩條指令輸出(30%) + 進階(20%) + 加分(10%)
 
 ## 二、六份短版回家作業（略，可參考）
 
