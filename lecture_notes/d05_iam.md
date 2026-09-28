@@ -82,8 +82,7 @@
 6. 進階: 加進阿德跟小美, 先寬後收緊
 7. 加分: Budget Action 自動煞車
 
-- 必做寫五項: Free plan 還是 Paid plan、root 的 MFA 裝置在哪、登入入口(B:帳號 ID 加 course-admin;A:
-  access portal 網址)、你有哪兩種權限、兩筆預算的門檻
+- 必做寫五項: Free plan 還是 Paid plan、root 的 MFA 裝置在哪、登入入口(B: 帳號 ID 加 course-admin;A: access portal 網址)、你有哪兩種權限、兩筆預算的門檻
 - 附上 3-2 跟 4-3 兩條指令的實際輸出,帳號 ID 遮掉
 - 進階: 加寫阿德跟小美各有什麼權限,附 mei 開 EC2 被擋的截圖或文字紀錄
 - 加分: 加寫 Budget Action 會做什麼,action 狀態是 Standby
