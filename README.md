@@ -40,7 +40,7 @@
 | 第 10 單元 | 資料庫 RDS、Aurora 與快取                  | ✓        |
 | 第 11 單元 | DNS 與內容分發                             | ✓        |
 
-另有非單元類的補充簡報 `AGENT介紹.pdf`（AI Agent 介紹）。
+另有非單元類的補充簡報：`AGENT介紹.pdf`（AI Agent 介紹）與 `AI 員工帝國.pdf`（AI 員工 demo）。
 
 `A04-7 常掛掉的單機服務/` 是第 8 單元的講師材料：一支處理 40～120 個請求後會自行結束的 HTTP 服務（`app.py`，聽 8080，`/health` 回 200）與對應的 EC2 開機腳本（`user-data.sh`），用來練習 ALB 健康檢查與 Auto Scaling 自動換機。
 
