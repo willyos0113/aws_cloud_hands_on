@@ -12,10 +12,10 @@
 │   └── output/summary.md  #   整理後的重點筆記
 ├── d05_iam/               # 第 5 單元實作截圖（root MFA、Budgets、多使用者權限、Budget Action）
 ├── d08_ha/                # 第 8 單元實作腳本（持續打 ALB 觀察高可用與自動擴展）
-├── lectures/              # 課程原始 PDF（第 4–10 單元）
-│   ├── meterials/         #   各單元題庫練習 PDF（第 5–10 單元）
+├── lectures/              # 課程原始 PDF（第 4–11 單元）與 AI Agent 補充簡報
+│   ├── meterials/         #   各單元題庫練習 PDF（第 5–11 單元）
 │   └── A04-7 常掛掉的單機服務/  # 第 8 單元講師材料（app.py、user-data.sh）
-├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ d10 RDS）與上課日誌
+├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ d11 DNS/CDN）與上課日誌
 ├── implements/            # 每日動手做紀錄與驗收表（d01, d05, d07）
 │   └── d07_implement/     #   S3 CLI 操作實作 + Deny HTTP 的 Policy 範例
 ├── references/            # 題庫參考資料（CLF-C02、SAA-C03 PDF）
@@ -27,7 +27,7 @@
 
 ### `lectures/` — 課程教材
 
-第 4～10 單元的原始 PDF 講義，題庫練習放在 `meterials/`：
+第 4～11 單元的原始 PDF 講義，題庫練習放在 `meterials/`：
 
 | 單元       | 主題                                       | 題庫練習 |
 | ---------- | ------------------------------------------ | -------- |
@@ -38,6 +38,9 @@
 | 第 8 單元  | 高可用與自動擴展                           | ✓        |
 | 第 9 單元  | VPC 網路                                   | ✓        |
 | 第 10 單元 | 資料庫 RDS、Aurora 與快取                  | ✓        |
+| 第 11 單元 | DNS 與內容分發                             | ✓        |
+
+另有非單元類的補充簡報 `AGENT介紹.pdf`（AI Agent 介紹）。
 
 `A04-7 常掛掉的單機服務/` 是第 8 單元的講師材料：一支處理 40～120 個請求後會自行結束的 HTTP 服務（`app.py`，聽 8080，`/health` 回 200）與對應的 EC2 開機腳本（`user-data.sh`），用來練習 ALB 健康檢查與 Auto Scaling 自動換機。
 
@@ -51,9 +54,10 @@
 - `d07_storage.md`：EBS／EFS／S3 三種儲存形狀
 - `d08_ha.md`：單點失敗、負載平衡、健康檢查、Auto Scaling
 - `d09_vpc.md`：VPC、CIDR、Subnet、Route Table、IGW、NAT Gateway
-- `d10_rds.md`：RDS、Aurora 與快取
+- `d10_rds.md`：RDS、Aurora 與快取，含手動 failover 量測中斷秒數的實作
+- `d11_dns_cdn.md`：Route 53（記錄型別、Alias、路由策略與故障切換）、CloudFront + OAC、Global Accelerator，含 S3 靜態前端掛 CloudFront 的實作
 
-另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`課堂補充.md`、`ai員工.md`。
+另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`課堂補充.md`。
 
 ### `implements/` — 動手做與驗收
 
