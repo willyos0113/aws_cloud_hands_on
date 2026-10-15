@@ -4,7 +4,6 @@
 
 ## 待辦
 
-- [ ] 第 11 單元 Route 53：已上完，待複習並補 `lecture_notes/d11_route53.md`
 - [ ] 第 12 單元 CloudWatch：已上完，待複習並補 `lecture_notes/d12_cloudwatch.md`
 
 （同一份清單也寫在 `CLAUDE.md`，Claude 會在新對話中優先提醒；完成後兩處一併移除。）

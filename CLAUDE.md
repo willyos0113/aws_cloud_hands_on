@@ -14,7 +14,6 @@
 
 使用者可能在不同電腦操作此專案，因此待辦寫在專案內。每次新對話中，使用者第一次提問時，**先用一兩句提醒**下列未完成事項，再回答問題；完成後從此清單移除，並同步更新 `README.md` 的「待辦」區塊。
 
-- [ ] 第 11 單元 Route 53 已上完，尚未補 `lecture_notes/d11_route53.md`
 - [ ] 第 12 單元 CloudWatch 已上完，尚未補 `lecture_notes/d12_cloudwatch.md`
 
 筆記格式參考 `lecture_notes/d10_rds.md`，原始講義放在 `lectures/`。
