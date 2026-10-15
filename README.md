@@ -2,6 +2,15 @@
 
 這是一份個人的 **AWS 雲端工程師 / AWS Certified Cloud Practitioner (CCP)** 學習與實作紀錄，內容涵蓋課程講義、單元筆記、題庫練習、每日作業驗收與實際動手做的帳號、CLI 操作紀錄。目錄會隨學習進度持續變動，非固定結構。
 
+## 待辦
+
+- [ ] 第 11 單元 Route 53：已上完，待複習並補 `lecture_notes/d11_route53.md`
+- [ ] 第 12 單元 CloudWatch：已上完，待複習並補 `lecture_notes/d12_cloudwatch.md`
+
+（同一份清單也寫在 `CLAUDE.md`，Claude 會在新對話中優先提醒；完成後兩處一併移除。）
+
+---
+
 ## 目錄結構
 
 ```
