@@ -4,7 +4,7 @@
 
 ## 待辦
 
-- [ ] 第 12 單元 CloudWatch：已上完，待複習並補 `lecture_notes/d12_cloudwatch.md`
+（目前無待辦）
 
 （同一份清單也寫在 `CLAUDE.md`，Claude 會在新對話中優先提醒；完成後兩處一併移除。）
 
@@ -64,6 +64,8 @@
 - `d09_vpc.md`：VPC、CIDR、Subnet、Route Table、IGW、NAT Gateway
 - `d10_rds.md`：RDS、Aurora 與快取，含手動 failover 量測中斷秒數的實作
 - `d11_dns_cdn.md`：Route 53（記錄型別、Alias、路由策略與故障切換）、CloudFront + OAC、Global Accelerator，含 S3 靜態前端掛 CloudFront 的實作
+- `d12_cloudwatch.md`：可觀測性與稽核，CloudWatch 指標／告警／Logs Insights、CloudTrail、EventBridge、AI 應用的可觀測性，含告警信＋日誌＋稽核串接的實作
+- `d13_iac.md`：Infrastructure as Code，CloudFormation（change set、Replacement、DeletionPolicy）、SAM、CDK、工具選型、AI 生成 IaC 的取代陷阱，含補完模板並部署／刪除堆疊的實作
 
 另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`課堂補充.md`。
 
