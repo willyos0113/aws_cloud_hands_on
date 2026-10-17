@@ -20,10 +20,10 @@
 │   └── output/summary.md  #   整理後的重點筆記
 ├── d05_iam/               # 第 5 單元實作截圖（root MFA、Budgets、多使用者權限、Budget Action）
 ├── d08_ha/                # 第 8 單元實作腳本（持續打 ALB 觀察高可用與自動擴展）
-├── lectures/              # 課程原始 PDF（第 4–11 單元）與 AI Agent 補充簡報
-│   ├── meterials/         #   各單元題庫練習 PDF（第 5–11 單元）
+├── lectures/              # 課程原始 PDF（D04–D14 單元）與 AI Agent 補充簡報
+│   ├── meterials/         #   各單元題庫練習 PDF（D05–D11）
 │   └── A04-7 常掛掉的單機服務/  # 第 8 單元講師材料（app.py、user-data.sh）
-├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ d11 DNS/CDN）與上課日誌
+├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ d14 Lambda）與上課日誌
 ├── implements/            # 每日動手做紀錄與驗收表（d01, d05, d07）
 │   └── d07_implement/     #   S3 CLI 操作實作 + Deny HTTP 的 Policy 範例
 ├── references/            # 題庫參考資料（CLF-C02、SAA-C03 PDF）
@@ -35,18 +35,21 @@
 
 ### `lectures/` — 課程教材
 
-第 4～11 單元的原始 PDF 講義，題庫練習放在 `meterials/`：
+D04～D14 單元的原始 PDF 講義（檔名 `DNN 主題.pdf`），題庫練習放在 `meterials/`：
 
-| 單元       | 主題                                       | 題庫練習 |
-| ---------- | ------------------------------------------ | -------- |
-| 第 4 單元  | 程式開發人員的日常                         | —        |
-| 第 5 單元  | 帳號安全、IAM 與成本控制（另有更新版講義） | ✓        |
-| 第 6 單元  | EC2 與運算選型                             | ✓        |
-| 第 7 單元  | 儲存 EBS、EFS 與 S3                        | ✓        |
-| 第 8 單元  | 高可用與自動擴展                           | ✓        |
-| 第 9 單元  | VPC 網路                                   | ✓        |
-| 第 10 單元 | 資料庫 RDS、Aurora 與快取                  | ✓        |
-| 第 11 單元 | DNS 與內容分發                             | ✓        |
+| 單元 | 主題                                       | 題庫練習 |
+| ---- | ------------------------------------------ | -------- |
+| D04 | 程式開發人員的日常                         | —        |
+| D05 | 帳號安全、IAM 與成本控制（另有更新版講義） | ✓        |
+| D06 | EC2 與運算選型                             | ✓        |
+| D07 | 儲存 EBS、EFS 與 S3                        | ✓        |
+| D08 | 高可用與自動擴展                           | ✓        |
+| D09 | VPC 網路                                   | ✓        |
+| D10 | 資料庫 RDS、Aurora 與快取                  | ✓        |
+| D11 | DNS 與內容分發                             | ✓        |
+| D12 | 可觀測性與稽核                             | —        |
+| D13 | Infrastructure as Code                     | —        |
+| D14 | Serverless 與 Lambda                       | —        |
 
 另有非單元類的補充簡報：`AGENT介紹.pdf`（AI Agent 介紹）與 `AI 員工帝國.pdf`（AI 員工 demo）。
 
@@ -66,6 +69,7 @@
 - `d11_dns_cdn.md`：Route 53（記錄型別、Alias、路由策略與故障切換）、CloudFront + OAC、Global Accelerator，含 S3 靜態前端掛 CloudFront 的實作
 - `d12_cloudwatch.md`：可觀測性與稽核，CloudWatch 指標／告警／Logs Insights、CloudTrail、EventBridge、AI 應用的可觀測性，含告警信＋日誌＋稽核串接的實作
 - `d13_iac.md`：Infrastructure as Code，CloudFormation（change set、Replacement、DeletionPolicy）、SAM、CDK、工具選型、AI 生成 IaC 的取代陷阱，含補完模板並部署／刪除堆疊的實作
+- `d14_lambda.md`：Serverless 與 Lambda（講義 D14），handler、計費與限制、三種呼叫模型、Layer／版本／別名、冷啟動、非同步失敗處理、agent 與 Lambda 的邊界
 
 另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`課堂補充.md`。
 

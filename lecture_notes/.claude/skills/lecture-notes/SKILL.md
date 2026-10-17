@@ -1,13 +1,13 @@
 ---
 name: lecture-notes
-description: 在 lecture_notes/ 新增或改寫 AWS 課程筆記（d12_cloudwatch.md 這類單元筆記、上課日誌、課堂補充）時使用。規範檔名、章節結構、寫作風格、來源對照與收尾同步項目。
+description: 在 lecture_notes/ 新增或改寫 AWS 課程筆記（d15_xxx.md 這類單元筆記、上課日誌、課堂補充）時使用。規範檔名、章節結構、寫作風格、來源對照與收尾同步項目。
 ---
 
 # lecture_notes 筆記撰寫規範
 
-此規範由 `lecture_notes/` 內全部檔案（d04–d11 單元筆記、上課日誌、課堂補充）逐一掃描後歸納。**只管這個資料夾內的筆記**。
+此規範由 `lecture_notes/` 內全部檔案（d04–d14 單元筆記、上課日誌、課堂補充）逐一掃描後歸納。**只管這個資料夾內的筆記**。
 
-新增單元筆記前，先讀 `d11_dns_cdn.md`（最新、最完整）與 `d10_rds.md`（CLAUDE.md 指定的格式參考）。`d04`–`d09` 是舊格式，只當內容風格參考，不當結構範本。
+新增單元筆記前，先讀 `d13_iac.md`、`d11_dns_cdn.md`（新格式、最完整）與 `d10_rds.md`（CLAUDE.md 指定的格式參考）。`d04`–`d09` 是舊格式，只當內容風格參考，不當結構範本。
 
 ## 1. 檔案類型與命名
 
@@ -17,12 +17,12 @@ description: 在 lecture_notes/ 新增或改寫 AWS 課程筆記（d12_cloudwatc
 | 上課日誌 | `YYYYMMDD_上課日誌.md`            | `# YYYY-MM-DD \| 摘要：dXX 下半 + dYY 到某主題`                           |
 | 零散補充 | `課堂補充.md`（單一檔，往下追加） | `# d(-1) - 課堂補充`                                                      |
 
-- 單元編號 = 講義單元編號，對應 `lectures/第 NN 單元 xxx.pdf`；主題用服務或概念縮寫（`iam`、`ec2`、`storage`、`ha`、`vpc`、`rds`、`dns_cdn`）。
+- 單元編號 = 講義單元編號，對應 `lectures/DNN xxx.pdf`；主題用服務或概念縮寫（`iam`、`ec2`、`storage`、`ha`、`vpc`、`rds`、`dns_cdn`）。
 - 職涯建議、延伸學習連結這類零碎內容追加到 `課堂補充.md`，不另開新檔。
 
 ## 2. 兩代格式對照
 
-|          | 舊格式（d04–d09）                         | 新格式（d10、d11，**新檔照這個**）                                          |
+|          | 舊格式（d04–d09）                         | 新格式（d10–d14，**新檔照這個**）                                          |
 | -------- | ----------------------------------------- | --------------------------------------------------------------------------- |
 | 骨架     | `[內容]` 與 `[作業]` 兩大段               | 概念章 → 實作 → 回家作業 → Takeaway，不用 `[內容]` 標記                     |
 | 密度     | 長條列，一條塞多個分號句                  | 短條列，一行一個要點，多用表格                                              |
@@ -35,7 +35,7 @@ description: 在 lecture_notes/ 新增或改寫 AWS 課程筆記（d12_cloudwatc
 ```
 # dNN | 主題名稱
 
-> 來源：`lectures/第 NN 單元 xxx.pdf`（共 N 頁；定價與額度為講義 YYYY-MM-DD 查閱的數字）
+> 來源：`lectures/DNN xxx.pdf`（共 N 頁；定價與額度為講義 YYYY-MM-DD 查閱的數字）
 
 **今日目標**：一句話
 
@@ -88,7 +88,7 @@ description: 在 lecture_notes/ 新增或改寫 AWS 課程筆記（d12_cloudwatc
 
 **AI／Agent 應用段**
 
-- d05–d11 每個單元都有一章把該主題套到 **LLM／Agent**（Agent 權限、GPU vs Bedrock、RAG 與 S3、LLM 服務的指標／逾時／健康檢查、Agent 出口網路、語義快取、CDN 與聊天 API）。講義有這章就寫，且保留「一般 Web 服務 vs LLM 服務」對照表。
+- d05–d14 多數單元都有一章把該主題套到 **LLM／Agent**（Agent 權限、GPU vs Bedrock、RAG 與 S3、LLM 服務的指標／逾時／健康檢查、Agent 出口網路、語義快取、CDN 與聊天 API）。講義有這章就寫，且保留「一般 Web 服務 vs LLM 服務」對照表。
 - 回家作業圍繞同一個**期末專題**（Agent + Bedrock 的多層架構），題目措辭用「替專題…」。
 
 **實作章**
@@ -122,7 +122,7 @@ description: 在 lecture_notes/ 新增或改寫 AWS 課程筆記（d12_cloudwatc
 
 ## 7. 新增後的收尾（缺一不可）
 
-1. 該筆記若在 `CLAUDE.md`「待辦提醒」清單中（如 `d12_cloudwatch.md`），從清單移除。
+1. 該筆記若在 `CLAUDE.md`「待辦提醒」清單中（如 `d15_xxx.md`），從清單移除。
 2. 同步更新 `README.md` 的「待辦」區塊，並把新筆記加入檔案清單。
 3. 確認 `lectures/` 有對應 PDF，來源行檔名與頁數正確。
 4. 不自動 commit，使用者要求時才提交。

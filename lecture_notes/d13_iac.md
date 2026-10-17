@@ -1,6 +1,6 @@
 # d13 | Infrastructure as Code：CloudFormation、SAM、CDK 與 AI 生成
 
-> 來源：`lectures/第 13 單元 Infrastructure as Code.pdf`（共 78 頁；定價與額度為講義 2026-10-14 查閱的數字）
+> 來源：`lectures/D13 Infrastructure as Code.pdf`（共 78 頁；定價與額度為講義 2026-10-14 查閱的數字）
 
 **今日目標**：上週在主控台點了兩個小時環境才會動，組員說「我也要一套一樣的」——把環境寫成一份檔案，能重做、能審查、能一鍵收掉。
 
