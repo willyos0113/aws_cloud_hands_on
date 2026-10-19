@@ -23,7 +23,7 @@
 ├── lectures/              # 課程原始 PDF（D04–D14 單元）與 AI Agent 補充簡報
 │   ├── meterials/         #   各單元題庫練習 PDF（D05–D11）
 │   └── A04-7 常掛掉的單機服務/  # 第 8 單元講師材料（app.py、user-data.sh）
-├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ d14 Lambda）與上課日誌
+├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ d17 事件驅動）與上課日誌
 ├── implements/            # 每日動手做紀錄與驗收表（d01, d05, d07）
 │   └── d07_implement/     #   S3 CLI 操作實作 + Deny HTTP 的 Policy 範例
 ├── references/            # 題庫參考資料（CLF-C02、SAA-C03 PDF）
@@ -70,7 +70,9 @@ D04～D14 單元的原始 PDF 講義（檔名 `DNN 主題.pdf`），題庫練習
 - `d12_cloudwatch.md`：可觀測性與稽核，CloudWatch 指標／告警／Logs Insights、CloudTrail、EventBridge、AI 應用的可觀測性，含告警信＋日誌＋稽核串接的實作
 - `d13_iac.md`：Infrastructure as Code，CloudFormation（change set、Replacement、DeletionPolicy）、SAM、CDK、工具選型、AI 生成 IaC 的取代陷阱，含補完模板並部署／刪除堆疊的實作
 - `d14_lambda.md`：Serverless 與 Lambda（講義 D14），handler、計費與限制、三種呼叫模型、Layer／版本／別名、冷啟動、非同步失敗處理、agent 與 Lambda 的邊界
-
+- `d15_api_gateway.md`：API Gateway 與認證（講義 D15），REST vs HTTP API、用量計畫、Lambda proxy 整合與 502、Cognito 與三種授權器、CORS 預檢排查，含帶認證的 REST API 實作
+- `d16_dynamodb.md`：DynamoDB 深潛（講義 D16），單表設計與 GSI、on-demand vs provisioned、RCU／WCU、Streams、DAX，含五個查詢需求的單表設計作業
+- `d17_event_driven.md`：事件驅動架構（講義 D17），SQS 標準 vs FIFO、可見性逾時與死信佇列、SNS 扇出與 filter policy、EventBridge、批次部分失敗，含讓失敗訊息不消失的實作
 另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`課堂補充.md`。
 
 ### `implements/` — 動手做與驗收
