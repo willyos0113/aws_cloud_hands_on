@@ -20,9 +20,11 @@
 │   └── output/summary.md  #   整理後的重點筆記
 ├── d05_iam/               # 第 5 單元實作截圖（root MFA、Budgets、多使用者權限、Budget Action）
 ├── d08_ha/                # 第 8 單元實作腳本（持續打 ALB 觀察高可用與自動擴展）
-├── lectures/              # 課程原始 PDF（D04–D14 單元）與 AI Agent 補充簡報
-│   ├── meterials/         #   各單元題庫練習 PDF（D05–D11）
+├── lectures/              # 課程原始 PDF（D04–D17 單元）與 AI Agent 補充簡報
 │   └── A04-7 常掛掉的單機服務/  # 第 8 單元講師材料（app.py、user-data.sh）
+├── clf_exam/              # CLF-C02 練習題
+│   ├── meterials/         #   各單元題庫練習 PDF（D05–D11）
+│   └── questions/         #   CLF-C02 100 題（題目卷、答案卷）
 ├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ d17 事件驅動）與上課日誌
 ├── implements/            # 每日動手做紀錄與驗收表（d01, d05, d07）
 │   └── d07_implement/     #   S3 CLI 操作實作 + Deny HTTP 的 Policy 範例
@@ -35,7 +37,7 @@
 
 ### `lectures/` — 課程教材
 
-D04～D14 單元的原始 PDF 講義（檔名 `DNN 主題.pdf`），題庫練習放在 `meterials/`：
+D04～D17 單元的原始 PDF 講義（檔名 `DNN 主題.pdf`），各單元題庫練習放在 `clf_exam/meterials/`：
 
 | 單元 | 主題                                       | 題庫練習 |
 | ---- | ------------------------------------------ | -------- |
@@ -50,6 +52,9 @@ D04～D14 單元的原始 PDF 講義（檔名 `DNN 主題.pdf`），題庫練習
 | D12 | 可觀測性與稽核                             | —        |
 | D13 | Infrastructure as Code                     | —        |
 | D14 | Serverless 與 Lambda                       | —        |
+| D15 | API Gateway 與認證                         | —        |
+| D16 | DynamoDB 深潛                              | —        |
+| D17 | 事件驅動架構                               | —        |
 
 另有非單元類的補充簡報：`AGENT介紹.pdf`（AI Agent 介紹）與 `AI 員工帝國.pdf`（AI 員工 demo）。
 
@@ -104,6 +109,11 @@ D01（學習方法與 AI 家教）、D02（DevOps 與 GitHub）、D03（Docker �
 ### `d00_ai_tutor/`
 
 AI 家教功能與課程介紹 PDF，以及個人針對「跟 AI 一起學習」流程的反思紀錄（`d00_learn_flow_chart.md`）。
+
+### `clf_exam/` — CLF-C02 練習題
+
+- `meterials/`：D05～D11 各單元的題庫練習 PDF（檔名 `DNN 主題 題庫練習.pdf`）
+- `questions/`：CLF-C02 100 題模擬題，分為題目卷與答案卷兩份 PDF，可先做題再對答案
 
 ### `references/`
 
