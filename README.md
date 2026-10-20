@@ -1,4 +1,4 @@
-# AWS Cloud Hands-on — AWS 雲端工程師學習工作區
+# AWS Cloud Architect 2 — AWS 雲端工程學習筆記
 
 這是一份個人的 **AWS 雲端工程師 / AWS Certified Cloud Practitioner (CCP)** 學習與實作紀錄，內容涵蓋課程講義、單元筆記、題庫練習、每日作業驗收與實際動手做的帳號、CLI 操作紀錄。目錄會隨學習進度持續變動，非固定結構。
 
@@ -41,20 +41,20 @@ D04～D17 單元的原始 PDF 講義（檔名 `DNN 主題.pdf`），各單元題
 
 | 單元 | 主題                                       | 題庫練習 |
 | ---- | ------------------------------------------ | -------- |
-| D04 | 程式開發人員的日常                         | —        |
-| D05 | 帳號安全、IAM 與成本控制（另有更新版講義） | ✓        |
-| D06 | EC2 與運算選型                             | ✓        |
-| D07 | 儲存 EBS、EFS 與 S3                        | ✓        |
-| D08 | 高可用與自動擴展                           | ✓        |
-| D09 | VPC 網路                                   | ✓        |
-| D10 | 資料庫 RDS、Aurora 與快取                  | ✓        |
-| D11 | DNS 與內容分發                             | ✓        |
-| D12 | 可觀測性與稽核                             | —        |
-| D13 | Infrastructure as Code                     | —        |
-| D14 | Serverless 與 Lambda                       | —        |
-| D15 | API Gateway 與認證                         | —        |
-| D16 | DynamoDB 深潛                              | —        |
-| D17 | 事件驅動架構                               | —        |
+| D04  | 程式開發人員的日常                         | —        |
+| D05  | 帳號安全、IAM 與成本控制（另有更新版講義） | ✓        |
+| D06  | EC2 與運算選型                             | ✓        |
+| D07  | 儲存 EBS、EFS 與 S3                        | ✓        |
+| D08  | 高可用與自動擴展                           | ✓        |
+| D09  | VPC 網路                                   | ✓        |
+| D10  | 資料庫 RDS、Aurora 與快取                  | ✓        |
+| D11  | DNS 與內容分發                             | ✓        |
+| D12  | 可觀測性與稽核                             | —        |
+| D13  | Infrastructure as Code                     | —        |
+| D14  | Serverless 與 Lambda                       | —        |
+| D15  | API Gateway 與認證                         | —        |
+| D16  | DynamoDB 深潛                              | —        |
+| D17  | 事件驅動架構                               | —        |
 
 另有非單元類的補充簡報：`AGENT介紹.pdf`（AI Agent 介紹）與 `AI 員工帝國.pdf`（AI 員工 demo）。
 
@@ -78,7 +78,7 @@ D04～D17 單元的原始 PDF 講義（檔名 `DNN 主題.pdf`），各單元題
 - `d15_api_gateway.md`：API Gateway 與認證（講義 D15），REST vs HTTP API、用量計畫、Lambda proxy 整合與 502、Cognito 與三種授權器、CORS 預檢排查，含帶認證的 REST API 實作
 - `d16_dynamodb.md`：DynamoDB 深潛（講義 D16），單表設計與 GSI、on-demand vs provisioned、RCU／WCU、Streams、DAX，含五個查詢需求的單表設計作業
 - `d17_event_driven.md`：事件驅動架構（講義 D17），SQS 標準 vs FIFO、可見性逾時與死信佇列、SNS 扇出與 filter policy、EventBridge、批次部分失敗，含讓失敗訊息不消失的實作
-另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`課堂補充.md`。
+  另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`課堂補充.md`。
 
 ### `implements/` — 動手做與驗收
 
