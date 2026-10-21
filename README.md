@@ -23,8 +23,10 @@
 ├── lectures/              # 課程原始 PDF（D04–D17 單元）與 AI Agent 補充簡報
 │   └── A04-7 常掛掉的單機服務/  # 第 8 單元講師材料（app.py、user-data.sh）
 ├── clf_exam/              # CLF-C02 練習題
-│   ├── meterials/         #   各單元題庫練習 PDF（D05–D11）
-│   └── questions/         #   CLF-C02 100 題（題目卷、答案卷）
+│   ├── meterials/         #   各單元題庫練習 PDF（D05–D11）與 CLF-C02 2026Q3 教材
+│   ├── questions/         #   模擬題（題目卷、答案卷、測驗結果）與弱點專項測驗
+│   ├── 學習評估.md         #   歷次成績與診斷紀錄
+│   └── .claude/skills/    #   clf-exam skill（出題、評估規範）
 ├── lecture_notes/         # 依單元整理的筆記（d04 開發者日常 ~ d17 事件驅動）與上課日誌
 ├── implements/            # 每日動手做紀錄與驗收表（d01, d05, d07）
 │   └── d07_implement/     #   S3 CLI 操作實作 + Deny HTTP 的 Policy 範例
@@ -112,8 +114,10 @@ AI 家教功能與課程介紹 PDF，以及個人針對「跟 AI 一起學習」
 
 ### `clf_exam/` — CLF-C02 練習題
 
-- `meterials/`：D05～D11 各單元的題庫練習 PDF（檔名 `DNN 主題 題庫練習.pdf`）
-- `questions/`：CLF-C02 100 題模擬題，分為題目卷與答案卷兩份 PDF，可先做題再對答案
+- `meterials/`：D05～D11 各單元的題庫練習 PDF（檔名 `DNN 主題 題庫練習.pdf`）與 CLF-C02 2026Q3 教材 PDF
+- `questions/`：CLF-C02 模擬題，每回分為題目卷與答案卷（`.md` 與 `.pdf`），可先做題再對答案；`測驗結果.md` 記錄錯題與分數。含第一回 100 題、1020、1021 兩回，以及針對弱項的 `clfc02_1021_2_弱點專項` 30 題
+- `學習評估.md`：歷次成績、重複出錯的主題與下一步建議
+- `.claude/skills/clf-exam/`：此資料夾專用的 skill，規範檔名、題目卷與答案卷格式、出題原則與評估流程
 
 ### `references/`
 
