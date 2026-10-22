@@ -80,7 +80,7 @@ D04～D17 單元的原始 PDF 講義（檔名 `DNN 主題.pdf`），各單元題
 - `d15_api_gateway.md`：API Gateway 與認證（講義 D15），REST vs HTTP API、用量計畫、Lambda proxy 整合與 502、Cognito 與三種授權器、CORS 預檢排查，含帶認證的 REST API 實作
 - `d16_dynamodb.md`：DynamoDB 深潛（講義 D16），單表設計與 GSI、on-demand vs provisioned、RCU／WCU、Streams、DAX，含五個查詢需求的單表設計作業
 - `d17_event_driven.md`：事件驅動架構（講義 D17），SQS 標準 vs FIFO、可見性逾時與死信佇列、SNS 扇出與 filter policy、EventBridge、批次部分失敗，含讓失敗訊息不消失的實作
-  另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`課堂補充.md`。
+  另有非單元類的紀錄：`20260920_上課日誌.md`（d07 下半～d08 的階段性摘要）、`d00_課堂補充.md`。
 
 ### `implements/` — 動手做與驗收
 
