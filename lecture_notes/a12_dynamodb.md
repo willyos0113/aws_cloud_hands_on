@@ -1,6 +1,6 @@
-# d16 | DynamoDB 深潛：先列查詢，再設計鍵
+# a12 | DynamoDB 深潛：先列查詢，再設計鍵
 
-> 來源：`lectures/D16 DynamoDB 深潛 投影片.pdf`（共 35 頁；講義封面標示為「第 13 單元」；規格為講義 2026-10-19 查閱的數字，出處為 DynamoDB Developer Guide）
+> 來源：`lectures/A12 DynamoDB 深潛 投影片.pdf`（共 35 頁；講義封面標示為「第 13 單元」；規格為講義 2026-10-19 查閱的數字，出處為 DynamoDB Developer Guide）
 
 **今日目標**：雙十一零點，訂單表要怎麼撐住？DynamoDB 沒有 JOIN，要先想好怎麼查。學會單表設計的思路、容量模式的選法、Streams 與 DAX 各自適合什麼情境。
 

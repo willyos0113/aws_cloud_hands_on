@@ -16,7 +16,7 @@
 
 （目前無待辦）
 
-筆記格式參考 `lecture_notes/d10_rds.md`，原始講義放在 `lectures/`。
+筆記格式參考 `lecture_notes/a06_rds.md`，原始講義放在 `lectures/`。
 
 ---
 

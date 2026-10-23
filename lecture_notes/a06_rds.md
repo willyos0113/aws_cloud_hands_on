@@ -1,4 +1,4 @@
-# d10 | 資料庫 RDS、Aurora 與快取
+# a06 | 資料庫 RDS、Aurora 與快取
 
 ---
 

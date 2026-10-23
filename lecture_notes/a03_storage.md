@@ -1,4 +1,4 @@
-# d07 | 儲存 EBS、EFS 與 S3
+# a03 | 儲存 EBS、EFS 與 S3
 
 [內容]
 

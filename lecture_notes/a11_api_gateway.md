@@ -1,6 +1,6 @@
-# d15 | API Gateway 與認證：請求先過這道門
+# a11 | API Gateway 與認證：請求先過這道門
 
-> 來源：`lectures/D15 API Gateway 與認證 投影片.pdf`（共 33 頁；講義封面標示為「第 12 單元：認證與授權」，實作出處為課綱 A12 第 7 節；規格為講義 2026-10-16 查閱的數字，出處為 API Gateway Developer Guide 與 Cognito Developer Guide）
+> 來源：`lectures/A11 API Gateway 與認證 投影片.pdf`（共 33 頁；講義封面標示為「第 12 單元：認證與授權」，實作出處為課綱 A12 第 7 節；規格為講義 2026-10-16 查閱的數字，出處為 API Gateway Developer Guide 與 Cognito Developer Guide）
 
 **今日目標**：Lambda 寫好了，網頁要怎麼呼叫它？選對 API 型態，讓 Gateway 把請求交給函式，再用授權器擋住沒帶權杖的人；瀏覽器出現跨域錯誤時，知道先查哪裡。
 

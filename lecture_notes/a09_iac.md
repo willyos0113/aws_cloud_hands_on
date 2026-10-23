@@ -1,6 +1,6 @@
-# d13 | Infrastructure as Code：CloudFormation、SAM、CDK 與 AI 生成
+# a09 | Infrastructure as Code：CloudFormation、SAM、CDK 與 AI 生成
 
-> 來源：`lectures/D13 Infrastructure as Code.pdf`（共 78 頁；定價與額度為講義 2026-10-14 查閱的數字）
+> 來源：`lectures/A09 Infrastructure as Code.pdf`（共 78 頁；定價與額度為講義 2026-10-14 查閱的數字）
 
 **今日目標**：上週在主控台點了兩個小時環境才會動，組員說「我也要一套一樣的」——把環境寫成一份檔案，能重做、能審查、能一鍵收掉。
 
@@ -56,7 +56,7 @@
 **CCP 考點**
 
 - CLF-C02 第 0629 題：用標準化**範本**建立架構的**複本**，用於開發、測試、正式環境 → **CloudFormation**
-- 誘答：Cloud Map 幫服務互相找到對方；CloudFront 是 CDN（d11）；CloudTrail 記誰呼叫 API（d12）
+- 誘答：Cloud Map 幫服務互相找到對方；CloudFront 是 CDN（a07）；CloudTrail 記誰呼叫 API（a08）
 
 > 一句話：手點的環境只活在你的記憶裡。寫成檔案，才能重做、審查、收掉。
 

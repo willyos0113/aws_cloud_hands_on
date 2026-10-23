@@ -6,7 +6,7 @@
 
 # 路徑
 
-pwd: /Users/yiwei/Desktop/workspace/2026aws/aws_ai/implements/d07_implement
+pwd: /Users/yiwei/Desktop/workspace/2026aws/aws_ai/implements/a03_implement
 
 # CLI 指令套入
 

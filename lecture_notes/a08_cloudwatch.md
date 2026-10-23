@@ -1,6 +1,6 @@
-# d12 | 可觀測性與稽核：CloudWatch、CloudTrail 與 EventBridge
+# a08 | 可觀測性與稽核：CloudWatch、CloudTrail 與 EventBridge
 
-> 來源：`lectures/D12 可觀測性與稽核.pdf`（共 69 頁；定價與額度為講義 2026-10-01 查閱的數字，Config、X-Ray 為 2026-10-02）
+> 來源：`lectures/A08 可觀測性與稽核.pdf`（共 69 頁；定價與額度為講義 2026-10-01 查閱的數字，Config、X-Ray 為 2026-10-02）
 
 **今日目標**：凌晨三點機器 CPU 衝到 100%，你在睡覺，系統要自己叫醒你、留下證詞、查得出是誰動的手。
 
